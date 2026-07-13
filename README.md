@@ -1,15 +1,11 @@
-# [LAB_NAME] research website
-
-Static site, built with Jekyll (which GitHub Pages runs for you automatically —
-you don't need to install anything locally to publish). Dracula color palette,
-monospace type, code-editor-styled nav.
+# Spakl research website
 
 ## Structure
 
 ```
-_config.yml          site title, tagline, contact info — edit this first
+_config.yml          site title, tagline, contact info
 _layouts/default.html   the HTML shell every page uses (nav + footer)
-_includes/nav.html      the tab-bar navigation (edit once, changes everywhere)
+_includes/nav.html      the tab-bar navigation
 _includes/footer.html   the status-bar footer
 assets/css/style.css    all styling, colors, and the design tokens
 assets/js/main.js       mobile nav toggle
@@ -23,12 +19,6 @@ photos.html           group photo grid
 group/index.html      group area login placeholder
 group/dashboard.html  group area content placeholder
 ```
-
-Every page you'll actually edit is plain HTML with a bit of Liquid templating
-at the top (the `---` front matter block) — you don't need to know Jekyll
-beyond that to fill in content. Search each file for `[bracketed placeholders]`
-and `TODO` comments.
-
 ## 1. First pass: find-and-replace
 
 In `_config.yml`, fill in:
