@@ -1,0 +1,32 @@
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <span class="prompt-sym">&gt;</span> <span class="path">{{ site.title }}</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-tabs">
+      <span aria-hidden="true">☰</span> menu
+    </button>
+
+    <ul class="tabs" id="site-tabs">
+      <li><a class="tab{% if page.section == 'home' %} active{% endif %}" data-tab="home" href="{{ '/' | relative_url }}"{% if page.section == 'home' %} aria-current="page"{% endif %}>
+        <span>index</span><span class="ext">.md</span>
+      </a></li>
+      <li><a class="tab{% if page.section == 'research' %} active{% endif %}" data-tab="research" href="{{ '/research.html' | relative_url }}"{% if page.section == 'research' %} aria-current="page"{% endif %}>
+        <span>research</span><span class="ext">.py</span>
+      </a></li>
+      <li><a class="tab{% if page.section == 'publications' %} active{% endif %}" data-tab="publications" href="{{ '/publications.html' | relative_url }}"{% if page.section == 'publications' %} aria-current="page"{% endif %}>
+        <span>publications</span><span class="ext">.bib</span>
+      </a></li>
+      <li><a class="tab{% if page.section == 'tutorials' %} active{% endif %}" data-tab="tutorials" href="{{ '/tutorials.html' | relative_url }}"{% if page.section == 'tutorials' %} aria-current="page"{% endif %}>
+        <span>tutorials</span><span class="ext">.ipynb</span>
+      </a></li>
+      <li><a class="tab{% if page.section == 'photos' %} active{% endif %}" data-tab="photos" href="{{ '/photos.html' | relative_url }}"{% if page.section == 'photos' %} aria-current="page"{% endif %}>
+        <span>photos</span><span class="ext">/</span>
+      </a></li>
+      <li><a class="tab{% if page.section == 'group' %} active{% endif %}" data-tab="group" href="{{ '/group/' | relative_url }}"{% if page.section == 'group' %} aria-current="page"{% endif %}>
+        <span>group</span><span class="ext">/ 🔒</span>
+      </a></li>
+    </ul>
+  </nav>
+</header>

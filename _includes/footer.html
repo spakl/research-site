@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="status-bar">
+    <span class="branch">main</span>
+    <span>{{ site.university }} &middot; &copy; <span id="year"></span> {{ site.title }}</span>
+    <span class="status-bar-links">
+      <a href="mailto:{{ site.email }}">email</a>
+      <a href="{{ site.github_org }}" target="_blank" rel="noopener">github</a>
+    </span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{% if page.extra_js %}<script src="{{ page.extra_js | relative_url }}"></script>{% endif %}

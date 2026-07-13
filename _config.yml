@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# Site configuration
+# GitHub Pages builds with Jekyll 
+#---------------------------------------------------------------------------
+
+title: "SPAKL Research Group"
+tagline: "Computational Chemistry"
+description: >-
+  Welcome to the Spakl Research Group! We develop methods for electronic structure and study reactions with computational chemistry.
+
+# Contact links
+email: "spak@southern.edu"
+github_org: "https://github.com/spakl/"
+university: "Southern Adventist University/ Chemistry Department"
+
+# Domain Info
+url: ""
+baseurl: ""
+
+# Markdown + build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

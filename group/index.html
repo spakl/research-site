@@ -1,0 +1,42 @@
+---
+layout: default
+section: group
+title: Group Area
+extra_js: /assets/js/group-gate.js
+---
+
+<section class="section" style="border-top:none;">
+  <div class="container">
+    <div class="section-head">
+      <span class="comment">group/</span>
+      <h1>Group area</h1>
+      <p class="text-muted">Members-only docs, schedule, and resources.</p>
+    </div>
+
+    <div class="notice">
+      <strong>Not wired up yet:</strong> this login box is a visual placeholder — it
+      doesn't check a real username or password against anything (GitHub Pages can't run
+      that kind of server-side check). See the README for real ways to lock this down before
+      you put anything sensitive behind it.
+    </div>
+
+    <div class="panel">
+      <form id="gate-form">
+        <div class="field">
+          <label for="gate-user">username</label>
+          <input type="text" id="gate-user" name="username" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="gate-pass">passphrase</label>
+          <input type="password" id="gate-pass" name="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn btn-solid">log in</button>
+        <p class="error-text" id="gate-error">placeholder only — wire up real auth first (see README)</p>
+      </form>
+    </div>
+
+    <p class="comment" style="margin-top: 20px;">
+      <a href="{{ '/group/dashboard.html' | relative_url }}">preview the members layout without logging in →</a>
+    </p>
+  </div>
+</section>

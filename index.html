@@ -1,0 +1,98 @@
+---
+layout: default
+section: home
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="terminal">
+      <div class="terminal-titlebar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">zsh — {{ site.title | slugify }}</span>
+      </div>
+      <div class="terminal-body">
+        <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">whoami</span></p>
+        <p class="terminal-output"><strong>{{ site.title }}</strong> — [PI_NAME], {{ site.university }}</p>
+
+        <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">cat mission.txt</span></p>
+        <p class="terminal-output">
+          {{ site.tagline }}<br>
+          [Add 2-3 sentences here about your group's research focus, the
+          questions you care about, and who you work with. This is the first
+          thing visitors read, so keep it concrete and jargon-light.]
+        </p>
+
+        <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">ls</span><span class="cursor"></span></p>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="{{ '/research.html' | relative_url }}" class="btn btn-solid">view research</a>
+      <a href="{{ '/publications.html' | relative_url }}" class="btn">see publications</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="comment">quick_links</span>
+      <h2>Get around</h2>
+    </div>
+
+    <div class="grid">
+      <a class="card" data-accent="research" href="{{ '/research.html' | relative_url }}">
+        <h3>Research</h3>
+        <p>A quick overview of what our projects are working on right now.</p>
+        <span class="card-meta">research.py</span>
+      </a>
+      <a class="card" data-accent="publications" href="{{ '/publications.html' | relative_url }}">
+        <h3>Publications</h3>
+        <p>Papers, preprints, and talks from the group.</p>
+        <span class="card-meta">publications.bib</span>
+      </a>
+      <a class="card" data-accent="tutorials" href="{{ '/tutorials.html' | relative_url }}">
+        <h3>Tutorials</h3>
+        <p>Colab notebooks and guides we've put together for getting started.</p>
+        <span class="card-meta">tutorials.ipynb</span>
+      </a>
+      <a class="card" data-accent="photos" href="{{ '/photos.html' | relative_url }}">
+        <h3>Photos</h3>
+        <p>Group dinners, lunches, and the occasional lab outing.</p>
+        <span class="card-meta">photos/</span>
+      </a>
+      <a class="card" data-accent="group" href="{{ '/group/' | relative_url }}">
+        <h3>Group area</h3>
+        <p>Members-only docs, schedule, and resources.</p>
+        <span class="card-meta">group/ 🔒 members only</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="comment">git log --oneline -5</span>
+      <h2>Latest updates</h2>
+    </div>
+
+    <ul class="log-list">
+      <li class="log-item">
+        <span class="log-date">2026-07-01</span>
+        <span><span class="commit-hash">a1b2c3d</span>[Example] New paper accepted — replace with your real update.</span>
+      </li>
+      <li class="log-item">
+        <span class="log-date">2026-06-10</span>
+        <span><span class="commit-hash">e4f5g6h</span>[Example] Added a new tutorial notebook — replace with your real update.</span>
+      </li>
+      <li class="log-item">
+        <span class="log-date">2026-05-22</span>
+        <span><span class="commit-hash">i7j8k9l</span>[Example] Welcomed a new group member — replace with your real update.</span>
+      </li>
+    </ul>
+  </div>
+</section>
