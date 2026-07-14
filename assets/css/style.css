@@ -528,3 +528,45 @@ p  { margin: 0 0 1em; color: var(--fg); }
   font-size: 0.85rem;
 }
 .crumb::before { content: "../ "; }
+
+/* ==========================================================================
+   Branch graph — used on research detail pages to show sub-threads of a project
+   ========================================================================== */
+.branch-graph {
+  position: relative;
+  padding-left: 26px;
+  margin: 8px 0;
+}
+.branch-graph::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--line);
+}
+.branch-item {
+  position: relative;
+  margin-bottom: 26px;
+}
+.branch-item:last-child { margin-bottom: 0; }
+.branch-item::before {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+}
+.branch-name {
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+.branch-name::before { content: "⎇ "; opacity: 0.7; }
+.branch-desc { color: var(--fg); margin: 0 0 6px; font-size: 0.95rem; }
+.branch-status { font-size: 0.8rem; color: var(--muted); }
