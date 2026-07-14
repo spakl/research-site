@@ -515,3 +515,9 @@ p  { margin: 0 0 1em; color: var(--fg); }
 .related-item .related-title { font-weight: 600; margin: 0 0 4px; }
 .related-item .related-note { color: var(--muted); font-size: 0.88rem; margin: 0; }
 .related-item .related-links { margin-top: 8px; display: flex; gap: 14px; font-size: 0.85rem; }
+
+/* Keep the status tag and Lead line grouped tightly together */
+.card .tag + .card-meta {
+  margin-top: 6px;
+  padding-top: 0;
+}
