@@ -570,3 +570,63 @@ p  { margin: 0 0 1em; color: var(--fg); }
 .branch-name::before { content: "⎇ "; opacity: 0.7; }
 .branch-desc { color: var(--fg); margin: 0 0 6px; font-size: 0.95rem; }
 .branch-status { font-size: 0.8rem; color: var(--muted); }
+
+/* ==========================================================================
+   Branch tree — each branch as its own card, connected to a trunk line
+   ========================================================================== */
+.trunk-root {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 0 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.trunk-root .dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--muted); flex-shrink: 0;
+}
+
+.branch-tree {
+  position: relative;
+  padding-left: 34px;
+  margin: 0 0 0 4px;
+}
+.branch-tree::before {
+  content: "";
+  position: absolute;
+  left: 9px; top: 0; bottom: 14px; width: 2px;
+  background: var(--line);
+}
+
+.branch-node {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 20px 0;
+}
+.branch-node::before {
+  content: "";
+  position: absolute;
+  left: -25px; top: 24px; width: 19px; height: 2px;
+  background: var(--line);
+}
+.branch-node::after {
+  content: "";
+  position: absolute;
+  left: -7px; top: 19px; width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid var(--line);
+}
+.branch-dot {
+  position: absolute;
+  left: -30px; top: 19px; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent); border: 2px solid var(--bg);
+}
+.branch-title {
+  margin: 0 0 6px; color: var(--fg); font-size: 1.05rem;
+}
+.branch-node p { margin: 0 0 8px; font-size: 0.92rem; }
