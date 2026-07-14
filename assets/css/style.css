@@ -630,3 +630,6 @@ p  { margin: 0 0 1em; color: var(--fg); }
   margin: 0 0 6px; color: var(--fg); font-size: 1.05rem;
 }
 .branch-node p { margin: 0 0 8px; font-size: 0.92rem; }
+
+/* Indent branch card body under its title */
+.branch-body { padding-left: 16px; }
