@@ -15,55 +15,41 @@ title: Home
       </div>
       <div class="terminal-body">
         <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">whoami</span></p>
-        <p class="terminal-output"><strong>{{ site.title }}</strong> — [PI_NAME], {{ site.university }}</p>
+        <p class="terminal-output"><strong>{{ site.title }}</strong> — Dr. Sarah Pak, [New Member Here]</p>
 
         <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">cat mission.txt</span></p>
         <p class="terminal-output">
           {{ site.tagline }}<br>
-          [Add 2-3 sentences here about your group's research focus, the
-          questions you care about, and who you work with. This is the first
-          thing visitors read, so keep it concrete and jargon-light.]
+          Welcome to the Spakl Research Group! We develop methods for electronic structure and study reactions with computational chemistry.
         </p>
+<p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">ls</span></p>
 
-        <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd">ls</span><span class="cursor"></span></p>
+        <ul class="ls-output">
+          <li><a href="{{ '/research.html' | relative_url }}" style="--row-accent: var(--accent-research)">
+            <svg class="ls-icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10a.5.5 0 0 1-.5.5h-8.5a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M9.5 1.5v3h3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            research<span class="ext">.py</span>
+          </a></li>
+          <li><a href="{{ '/tutorials.html' | relative_url }}" style="--row-accent: var(--accent-tutorials)">
+            <svg class="ls-icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10a.5.5 0 0 1-.5.5h-8.5a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M9.5 1.5v3h3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            tutorials<span class="ext">.ipynb</span>
+          </a></li>
+          <li><a href="{{ '/photos.html' | relative_url }}" style="--row-accent: var(--accent-photos)">
+            <svg class="ls-icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M1.5 3.5a.5.5 0 0 1 .5-.5h3.6l1 1.2H14a.5.5 0 0 1 .5.5v8.3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            photos<span class="ext">/</span>
+          </a></li>
+          <li><a href="{{ '/group/' | relative_url }}" style="--row-accent: var(--accent-group)">
+            <svg class="ls-icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M1.5 3.5a.5.5 0 0 1 .5-.5h3.6l1 1.2H14a.5.5 0 0 1 .5.5v8.3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            group<span class="ext">/ 🔒</span>
+          </a></li>
+        </ul>
+
+        <p class="terminal-line"><span class="terminal-prompt">➜</span> <span class="terminal-path">~/lab</span> <span class="terminal-cmd"></span><span class="cursor"></span></p>
       </div>
     </div>
 
     <div class="hero-actions">
       <a href="{{ '/research.html' | relative_url }}" class="btn btn-solid">view research</a>
-      <a href="{{ '/publications.html' | relative_url }}" class="btn">see publications</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="comment">quick_links</span>
-      <h2>Get around</h2>
-    </div>
-
-    <div class="grid">
-      <a class="card" data-accent="research" href="{{ '/research.html' | relative_url }}">
-        <h3>Research</h3>
-        <p>A quick overview of what our projects are working on right now.</p>
-        <span class="card-meta">research.py</span>
-      </a>
-      <a class="card" data-accent="tutorials" href="{{ '/tutorials.html' | relative_url }}">
-        <h3>Tutorials</h3>
-        <p>Colab notebooks and guides we've put together for getting started.</p>
-        <span class="card-meta">tutorials.ipynb</span>
-      </a>
-      <a class="card" data-accent="photos" href="{{ '/photos.html' | relative_url }}">
-        <h3>Photos</h3>
-        <p>Group dinners, lunches, and the occasional lab outing.</p>
-        <span class="card-meta">photos/</span>
-      </a>
-      <a class="card" data-accent="group" href="{{ '/group/' | relative_url }}">
-        <h3>Group area</h3>
-        <p>Members-only docs, schedule, and resources.</p>
-        <span class="card-meta">group/ 🔒 members only</span>
-      </a>
+      <a href="{{ '/tutorials.html' | relative_url }}" class="btn">browse tutorials</a>
     </div>
   </div>
 </section>
