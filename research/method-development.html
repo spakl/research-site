@@ -9,23 +9,57 @@ title: Method Development
     <div class="section-head">
       <h1>Method Development</h1>
     </div>
-    <p>This project will build the group's in-house code to run quantum chemistry calculations. One main target is to contribute to ensemble density functional theory (eDFT), an emerging approach for excited state calculations. The focus is on the inclusion of relativistic corrections.</p>
+    <p>This project will build the group's in-house code to run quantum chemistry calculations.</p>
     <h2 style="margin-top:40px; margin-bottom:0;">Branches</h2>
     <span class="comment">git branch --list</span>
     <div class="branch-tree">
       <div class="branch-node">
         <span class="branch-dot"></span>
-        <h3 class="branch-title">[branch-name]</h3>
+        <h3 class="branch-title">hartree-fock</h3>
         <div class="branch-body">
-          <p>[What this branch/sub-thread is about.]</p>
+          <p>Implementing Hartree-Fock (HF), the foundational self-consistent field method that everything else builds on.</p>
+          <span class="tag">status: inactive</span>
+          <span class="card-meta" style="display:block; margin-top:6px;">Lead: TBD</span>
+        </div>
+      </div>
+      <div class="branch-node">
+        <span class="branch-dot"></span>
+        <h3 class="branch-title">dft</h3>
+        <div class="branch-body">
+          <p>Extending the code to ground-state Kohn-Sham density functional theory (DFT).</p>
+          <span class="tag">status: inactive</span>
+          <span class="card-meta" style="display:block; margin-top:6px;">Lead: TBD</span>
+        </div>
+      </div>
+      <div class="branch-node">
+        <span class="branch-dot"></span>
+        <h3 class="branch-title">tddft</h3>
+        <div class="branch-body">
+          <p>Implementing time-dependent DFT (TDDFT) to access excited-state properties</p>
+          <span class="tag">status: inactive</span>
+          <span class="card-meta" style="display:block; margin-top:6px;">Lead: TBD</span>
+        </div>
+      </div>
+      <div class="branch-node">
+        <span class="branch-dot"></span>
+        <h3 class="branch-title">edft</h3>
+        <div class="branch-body">
+          <p>Ensemble density functional theory (eDFT), an emerging approach for excited state calculations</p>
           <span class="tag">status: inactive</span>
           <span class="card-meta" style="display:block; margin-top:6px;">Lead: TBD</span>
           <div class="related-links" style="margin-top:8px;">
-            <a href="#">reference paper</a>
+          </div>
+      <div class="branch-node">
+        <span class="branch-dot"></span>
+        <h3 class="branch-title">edft-relativistic corrections</h3>
+        <div class="branch-body">
+          <p>The focus is the inclusion of relativistic corrections to edft via ZORA hamiltonian</p>
+          <span class="tag">status: inactive</span>
+          <span class="card-meta" style="display:block; margin-top:6px;">Lead: TBD</span>
+          <div class="related-links" style="margin-top:8px;">
           </div>
         </div>
       </div>
     </div>
-    <p class="comment" style="margin-top:8px;">TODO: duplicate a .branch-node block above for each branch/sub-thread of this project.</p>
   </div>
 </section>
