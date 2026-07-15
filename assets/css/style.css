@@ -633,3 +633,11 @@ p  { margin: 0 0 1em; color: var(--fg); }
 
 /* Indent branch card body under its title */
 .branch-body { padding-left: 16px; }
+
+/* Related-links row on branch cards — stacked, one link per line */
+.related-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+}
