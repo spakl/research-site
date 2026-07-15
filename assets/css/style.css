@@ -641,3 +641,11 @@ p  { margin: 0 0 1em; color: var(--fg); }
   gap: 6px;
   font-size: 0.85rem;
 }
+
+/* Related-links row on branch cards — stacked, one link per line */
+.related-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+}
